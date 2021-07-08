@@ -1,13 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+i {
+  font-size: 35px;
+}
+.navbar {
+  background-color: #343a40 !important;
+}
+.navbar-brand {
+  font-size: 25px !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 25px 0 !important;
+}
+.nav-link {
+  font-size: 20px;
+  font-weight: bold;
+}
+body {
+  overflow-x: hidden;
+}
+
+#Home {
+  background-color: #1abc9c;
+  height: 100vh;
+  padding-top: 100px;
+}
+#Home h1 {
+  padding-top: 25px;
+  font-size: 70px;
+  font-weight: bold;
+  position: relative;
+}
+.line::after,
+.line::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 120px;
+  height: 4px;
+  top: 140px;
+  left: 520px;
+}
+.line::before {
+  top: 140px;
+  left: 710px;
+}
+#Home img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+#Home p {
+  font-size: 25px;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 50px !important;
+  margin-top: 70px !important;
+  margin-bottom: 70px !important;
+  color: #2c3e50;
+}
+
+.portofilo-item img {
+  border-radius: 3%;
+}
+.portofilo-item {
+  position: relative;
+}
+.portofilo-item .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(26, 188, 156, 0.9);
+  border-radius: 3%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.portofilo-item:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+.overlay i {
+  color: white;
+  font-size: 80px;
+  margin-top: 90px;
+  margin-left: 140px;
+}
+
+.end-row {
+  margin-bottom: 100px;
+}
+.About {
+  background-color: #1abc9c;
+  height: 80vh;
+}
+.About p {
+  font-weight: 400;
+}
+.About i {
+}
+
+.form input {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  border-bottom: dotted 1px;
+}
+
+.form textarea {
+  padding-top: 30px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  border-bottom: dotted 1px;
+  resize: none;
+}
+
+.form button {
+  padding: 15px 30px;
+  background-color: #1abc9c;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 0 0 60px;
+}
+.footer i {
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+  border: solid 2px white;
+  border-radius: 50%;
+  margin: 0 5px;
+  font-size: 20px;
+}
+.footer i:hover {
+  background-color: white;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.footer .row {
+  padding-top: 80px;
+}
+.col-md-4 h3 {
+  padding: 0 0 20px;
+}
+.col-md-4 h5,
+.col-md-4 p {
+  font-size: 20px;
+}
+.copy {
+  background-color: rgb(26, 37, 47);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.copy p {
+  font-size: 14px;
+  padding-top: 15px;
 }
